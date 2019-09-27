@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ObjectPool.unity
+- path: "Assets/Scenes/Example1   Unity\u6027\u80FD\u4F18\u5316\u76F8\u5173\u524D\u63D0.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0

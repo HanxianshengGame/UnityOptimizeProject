@@ -19,7 +19,7 @@ namespace DefaultNamespace
             CreatePool(_bulletPrefab, _bulletCount);
         }
 
-        private void CreatePool(GameObject poolItem,int itemCount)
+        private void CreatePool(GameObject poolItem,int itemCount)  //创建资源池
         {
             if (poolItem == null) poolItem = GameObject.Find("Bullet");
             for (int i = 0; i < itemCount; i++)
@@ -31,7 +31,7 @@ namespace DefaultNamespace
             Destroy(poolItem);
         }
 
-        public GameObject GetOneBullet()
+        public GameObject GetOneBullet()       //获取一颗隐藏状态的子弹
         {
             for (int i = 0; i < _bullets.Count; i++)
             {

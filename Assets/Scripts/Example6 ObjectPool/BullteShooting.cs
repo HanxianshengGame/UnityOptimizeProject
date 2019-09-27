@@ -15,7 +15,7 @@ namespace DefaultNamespace
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))        //发射子弹
             {
                 GameObject bullet=_bulletPool.GetOneBullet();
                 bullet.SetActive(true);
@@ -25,7 +25,7 @@ namespace DefaultNamespace
             }
         }
 
-        private IEnumerator HideBullet(GameObject bullet)
+        private IEnumerator HideBullet(GameObject bullet)    //隐藏子弹
         {
             yield return new WaitForSeconds(3.0f);
             bullet.SetActive(false);
